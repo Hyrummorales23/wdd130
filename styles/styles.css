@@ -77,10 +77,12 @@ p {
   padding: 1rem;
   background-color: #ddd;
   color: #000;
+  overflow: visible;
+  word-wrap: break-word;
 }
 
 aside {
-  width: 20rem;
+  width: auto;
   position: relative;
   grid-column: 1/2;
   grid-row: 1/2;
