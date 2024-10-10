@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Down The River Adventures</title>
     <meta name="description" content="White Water Rafting's about page for Down The River Adventures.">
-        <meta name="author" content="Hyrum Morales">
+    <meta name="author" content="Hyrum Morales">
 
     <!-- Google Fonts for Heading and Body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,12 +22,15 @@
 
     <!-- Header Section -->
     <header>
-        <img src="images/downriver.png" alt="Downriver Adventures Logo">
+        <img src="images/downriver.png" alt="Downriver Adventures Logo" class="logo">
+        <h1>Down The River Adventures</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -50,13 +53,28 @@
         </section>
 
         <!-- Adventure Awaits Section -->
-        <section>
+        <section class="adventures">
             <h2>Adventure Awaits You!</h2>
-            <img src="images/rafting1.jpg" alt="Rafting Adventure 1">
-            <img src="images/rafting2.jpg" alt="Rafting Adventure 2">
-            <img src="images/rafting3.jpg" alt="Rafting Adventure 3">
-            <img src="images/rafting4.jpg" alt="Rafting Adventure 4">
-            <img src="images/rafting5.jpg" alt="Rafting Adventure 5">
+            <figure>
+                <img src="images/rafting1.jpg" alt="Los Dientes del Diablo">
+                <figcaption>Los Dientes del Diablo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting2.jpg" alt="Big Mallard">
+                <figcaption>Big Mallard</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting3.jpg" alt="Half Day Adventure">
+                <figcaption>Half Day Adventure</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting4.jpg" alt="Full Day Adventure">
+                <figcaption>Full Day Adventure</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting5.jpg" alt="Sunset Rafting">
+                <figcaption>Sunset Rafting</figcaption>
+            </figure>
         </section>
     </main>
 
@@ -79,4 +97,3 @@
 </body>
 
 </html>
-

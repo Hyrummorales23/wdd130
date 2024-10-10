@@ -19,35 +19,63 @@ body {
     padding: 0;
 }
 
+/* Global styles for h2 */
+h2 {
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Header styles */
 header {
     background-color: var(--primary-color);
     color: var(--light-color);
     padding: 20px;
+    display: grid;
+    grid-template-columns: 150px 1fr 2fr;
+    align-items: center;
+    gap: 20px;
     text-align: center;
 }
 
-header img {
-    width: 150px;
+header img.logo {
+    width: 120px;
 }
 
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
+header h1 {
+    font-size: 2rem;
+    font-family: var(--heading-font);
+}
+
+nav {
+    text-align: right;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 15px;
+}
+
+.navigation a {
     color: var(--light-color);
+    text-decoration: none;
     font-weight: bold;
+    padding: 10px 15px;
 }
 
-main {
-    padding: 20px;
-    text-align: center;
+.navigation a:hover {
+    color: var(--accent-color);
 }
 
+/* Hero section */
 .hero {
     position: relative;
 }
 
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
 }
@@ -78,6 +106,40 @@ main {
     margin-left: 10px;
 }
 
+/* History section */
+section {
+    padding: 20px;
+}
+
+/* Adventure section */
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.adventures h2 {
+    grid-column: 1 / -1;
+}
+
+.adventures figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+}
+
+.adventures figcaption {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: var(--dark-color);
+}
+
+/* Footer styles */
 footer {
     background-color: var(--dark-color);
     color: var(--light-color);
@@ -85,18 +147,16 @@ footer {
     text-align: center;
 }
 
-.sociallinks img {
-    width: 30px;
-    margin: 0 10px;
-    background-color: #FCF7F8;
-    
+.sociallinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
-.sociallinks a {
-    text-decoration: none;
+.sociallinks img {
+    width: 30px;
 }
 
 .sociallinks a:hover img {
     opacity: 0.7;
 }
-
