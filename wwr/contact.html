@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Down The River Adventures</title>
+    <meta name="description" content="Contact page for Down The River Adventures, including company information and a form for inquiries.">
+    <meta name="author" content="Hyrum Morales">
+
+    <!-- Google Fonts for Heading and Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,400&family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="images/downriver.png" alt="Downriver Adventures Logo" class="logo">
+        <h1>Down The River Adventures</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Information Section -->
+        <section>
+            <h2>Contact Information</h2>
+            <p>Address: 123 River Road, Rafting City, 12345</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: contact@downtheriver.com</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.549612187084!2d-83.17408181694951!3d35.81098871862999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885bdbe65b38ef09%3A0x95072aca84982f31!2s5%20Rivers%20Adventures!5e0!3m2!1ses-419!2sgt!4v1729397266318!5m2!1ses-419!2sgt" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <!-- Employee Profiles Section -->
+        <section>
+            <h2>Meet Our Team</h2>
+            <figure>
+                <img src="images/employee1.png" alt="John Doe">
+                <figcaption>John Doe - Lead Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="Jane Smith">
+                <figcaption>Jane Smith - Customer Support</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.png" alt="Emily Johnson">
+                <figcaption>Emily Johnson - Reservation Specialist</figcaption>
+            </figure>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section>
+            <h2>Contact Us</h2>
+            <form action="/submit-form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label>Purpose of Message:</label><br>
+                <input type="radio" id="general" name="purpose" value="General Inquiry">
+                <label for="general">General Inquiry</label><br>
+                <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                <label for="reservation">Reservation Question</label><br>
+                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                <label for="suggestion">Website Suggestion</label><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Down The River Adventures | Created by Hyrum Morales</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
+        <p><a href="https://app.moqups.com/Wy6BvHJhhU37bBVdqARj1hMnqRL9FrXY/view/page/ad12de680">View Contact Page Wireframe</a></p>
+    </footer>
+
+</body>
+
+</html>
